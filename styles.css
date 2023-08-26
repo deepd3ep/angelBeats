@@ -381,6 +381,16 @@ body {
         font-weight: 400;
     }
 
+    /* request */
+
+    .request_container {
+        width: 70vw;
+    }
+
+    .input_field {
+        width: 60vw;
+    }
+
     /* footer */
 
     .hd_logo_img {
