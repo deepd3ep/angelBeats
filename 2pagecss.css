@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Cormorant+Garamond:ital,wght@1,500&family=Cormorant:wght@600&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+}
+
+body {
+    background: #000000;
+    color: white;
+}
+
+/* код как код. Ничего вы здесь не найдете! */
+
+.image_ {
+    margin: 60px;
+    padding: 3px;
+}
+
+.img_container {
+    margin-top: 40px;
+    width: 600px;
+    height: 400px;
+    border: #fff solid 2px;
+    border-radius: 8%;
+    box-shadow: #ffffff 40 40 40;
+    -webkit-box-shadow: 0px 0px 38px 22px rgba(255, 255, 255, 0.2);
+-moz-box-shadow: 0px 0px 38px 22px rgba(255, 255, 255, 0.2);
+box-shadow: 0px 0px 38px 22px rgba(255, 255, 255, 0.2);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img_container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* nav bar */ /* эээ хватит смотреть! */
+
+.navbar-text {
+    color: white;
+}
+
+.logo {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100vw;
+    border-bottom: 1px white solid; 
+}
+
+.logo p {
+    color: #fff;
+}
+
+/* info */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Нету ту ничего интересного честно... */
+
+.info_1 {
+    width: 100%;
+    height: 560px;
+    background-image: url(./img2/hexagonalBG.svg);
+    background-size: cover;
+    display: flex;
+    margin: 0px;
+}
+.info_2 {
+    width: 100%;
+    height: 560px;
+    background-image: url(./img2/hexagonalBG.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container{
+    margin: 60px;
+    width: 40vw;
+}
+
+
+
+.info_1-text {
+    background-color: transparent;
+}
+
+.title {
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
+
+/* characters */ /* ну и чего ты этим добиваешься? */
+
+.characters {
+    border-bottom: #ffffff solid 1px;
+}
+
+#crds{
+    height: 86vh;
+    margin: 1px 0;
+    color: var(--font-color);
+    transform: scale(0.9);
+}
+
+.card_container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.cards__title {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+  
+.card {
+    width: 30%;
+    height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+  
+/* здесь все тоже чисто? представь себе! */
+
+.card:hover {
+    transform: scale(1.03);
+    z-index: 2;
+}
+  
+.card .card-info {
+    padding: 20px;
+}
+
+.card-info p {
+    font-size: 20px;
+    font-weight: 600;
+}
+  
+.subtitle{
+    padding-bottom: 20px;
+    text-align: center;
+}
+  
+.card img {
+    width: 100%;
+    height: 200px;
+    background-color: var(--main-bg-color);
+    opacity: 1;
+    object-fit: contain;
+    margin-bottom: 0px;
+}
+    
+.card:hover {
+    background-color: #b9b9b9;
+    color: #000000;
+}
+
+/* plot */ /* не это наверно розыгрышь?! */
+
+.plot {
+    background-image: url(./img2/hexagonalBG.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.plot p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.plot_title {
+    text-align: center;
+    font-size: 38;
+    margin: 20px;
+}
+
+.plot_text {
+    text-align: center;
+    width: 700px;
+}
+
+/* Evangelions */ /* я устал писать, и идей нет тоже... пойду я отдохну что ли... */
+
+.evangelions {
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+}
+
+.evangelions img {
+    width: 300px;
+}
+
+.evangelions, .title {
+    text-align: center;
+}
+
+.evas_text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.evas_text p {
+    width: 700px;
+}
+
+
+
+figure {
+    margin: 40px;
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  figure figcaption {
+    display: grid;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: end;
+    padding: .75rem;
+    background: var(--c,rgba(255, 255, 255, 0.253));
+    clip-path: inset(0 var(--_i,100%) 0 0);
+
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
+  }
+  
+
+/* footer */
+
+footer{
+    border-top: #fff solid 1px ;
+    display: flex;
+    margin: 20px;
+}
+
+footer .logo {
+    border: none;
+    justify-content: flex-start;
+}
+
+
+.footer_text {
+    margin-top: 50px;
+    width: 300px;
+    justify-content: flex-end;
+}
+
+/* аха. все? а больше кода нет! я старался уложиться в наименьшее колличество строчек кода и у меня получилось. */
